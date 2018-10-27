@@ -54,15 +54,7 @@ function addCalendar(calobject, icsUrlorg) {
 
         colors[$.md5(curUrl)] = color;
         var cache = new Date().getTime();
-	if (settings['calendar_parse_localy']){
-		curUrl = './vendor/dashticz/ical/?time=' + cache + '&url=' + curUrl;
-	} 
-	else if (settings['calendar_parse_on_server']){
-		curUrl = settings['calendar_parse_on_server_url'] + '/?time=' + cache + '&url=' + curUrl;
-	}
-	else {
-        	curUrl = 'https://dashticz.nl/ical/?time=' + cache + '&url=' + curUrl;
-        }
+		curUrl = settings['dashticz_php_path']+'ical/?time=' + cache + '&url=' + curUrl;
 	moment.locale(settings['calendarlanguage']);
         $.getJSON(curUrl, function (data, textstatus, jqXHR) {
 

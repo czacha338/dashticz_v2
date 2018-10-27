@@ -215,14 +215,6 @@ settingList['localize']['calendar_parse_localy']['title'] = language.settings.lo
 settingList['localize']['calendar_parse_localy']['type'] = 'checkbox';
 */
 
-settingList['localize']['calendar_parse_on_server'] = {};
-settingList['localize']['calendar_parse_on_server']['title'] = language.settings.localize.calendar_parse_on_server;
-settingList['localize']['calendar_parse_on_server']['type'] = 'checkbox';
-
-settingList['localize']['calendar_parse_on_server_url'] = {};
-settingList['localize']['calendar_parse_on_server_url']['title'] = language.settings.localize.calendar_parse_on_server_url;
-settingList['localize']['calendar_parse_on_server_url']['type'] = 'text';
-
 settingList['localize']['hide_seconds'] = {};
 settingList['localize']['hide_seconds']['title'] = language.settings.localize.hide_seconds;
 settingList['localize']['hide_seconds']['type'] = 'checkbox';
